@@ -1,0 +1,88 @@
+<style>
+html{
+        font-family:Georgia;
+        background-image:url('');
+    }
+.res_display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 10px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin:15px;
+}
+
+.display_bar {
+    width: 500px;
+    height: 80px;
+    border-radius: 20px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+#numbers {
+    width: 90px;
+    height: 90px;
+    font-size:40px;
+}
+
+.number_container {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-bottom:10px;
+}
+.equal{
+    height:110px;
+}
+</style>
+
+<h2>Arithmetic Operations</h2>
+<div>
+<div class="res_display">
+    <input type="text" name="result" class="display_bar" value="" placeholder="View Result Here" disabled />
+</div>
+
+<div class="number_container">
+    <input type="button" name="ac" id="numbers" value="AC" />
+    <input type="button" name="percent" id="numbers" value="%" />
+    <input type="button" name="divide" id="numbers" value="÷" />
+    <input type="button" name="multiply" id="numbers" value="×" />
+</div>
+
+<div class="number_container">
+    <input type="button" name="num9" id="numbers" value="9" />
+    <input type="button" name="num8" id="numbers" value="8" />
+    <input type="button" name="num7" id="numbers" value="7" />
+    <input type="button" name="sub" id="numbers" value="-" />
+</div>
+
+<div class="number_container">
+    <input type="button" name="num4" id="numbers" value="4" />
+    <input type="button" name="num5" id="numbers" value="5" />
+    <input type="button" name="num6" id="numbers" value="6" />
+    <input type="button" name="add" id="numbers" value="+" />
+</div>
+
+<div class="number_container">
+    <input type="button" name="num1" id="numbers" value="1" />
+    <input type="button" name="num2" id="numbers" value="2" />
+    <input type="button" name="num3" id="numbers" value="3" />
+    <input type="button" name="bckspace" id="numbers" value="⌫" />
+
+</div>
+
+<div class="number_container">
+    <input type="button" name="num0" id="numbers" value="0" />
+    <input type="button" name="num00" id="numbers" value="00" />
+    <input type="button" name="point" id="numbers" value="." />
+    <input type="submit" class="equal" id="numbers" value="=" />
+</div>
+
+
+</div>

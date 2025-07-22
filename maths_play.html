@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>The Number Playground</title>
+    <style>
+    html{
+        font-family:Georgia;
+        background-image:url('');
+    }
+    h1{
+        font-size:40px;
+        text-align: center;
+    }
+        .row {
+            border-radius: 10px;
+            margin: 30px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .row input {
+            padding: 50px 30px;
+            width:300px;
+             border-radius: 10px;
+             font-size:16px;
+        }
+       
+        .row input:active{
+            background-color:#FFA7A6;
+           
+        }
+        @media (max-width: 767px) {
+             .row {
+            flex-direction:column;
+           
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Let's Play With Numbers</h1>
+    <form method="get" action="">
+    <div class="row">
+        <input type="submit" value="Arithmetic operations" name="arithmetic" class="arithmetic"/>
+        <input type="submit" value="Powers & Roots" name="power" class="power_root"/>
+    </div>
+    <div class="row">
+        <input type="submit" value="Number Theory & Divisibility" name="number" class="number_theory"/>
+        <input type="submit" value="Mensuration" name="mensuration" class="mensuration"/>
+    </div>
+    </form>
+</body>
+</html>
