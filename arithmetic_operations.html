@@ -7,7 +7,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 0px 10px;
+    margin: 0px 0px 20px;
 }
 
 h2 {
@@ -17,18 +17,19 @@ h2 {
 }
 
 .display_bar {
-    width: 500px;
-    height: 80px;
-    border-radius: 20px;
+    width: 450px;
+    height: 100px;
+    border-radius: 10px;
     text-align: right;
     padding-right: 10px;
-    font-size: 25px;
+    font-size: 30px;
+    background-color:#fff9d4;
 }
 
 #numbers {
-    width: 90px;
-    height: 90px;
-    font-size:40px;
+    width: 100px;
+    height: 100px;
+    font-size:30px;
 }
 
 .number_container {
@@ -37,8 +38,45 @@ h2 {
     gap:10px;
     margin-bottom:10px;
 }
-.equal{
-    height:110px;
+
+#row1 input[type="button"]{
+    background-color:#c9ffc7;
+}
+
+#row1 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row2 input[type="button"]{
+    background-color:#d2fafd;
+}
+
+#row2 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row3 input[type="button"]{
+    background-color:#c8c4e5;
+}
+
+#row3 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row4 input[type="button"]{
+    background-color:#ffcea5;
+}
+
+#row4 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row5 input{
+    background-color:#ffdbdb;
+}
+
+#row5 input:active{
+    background-color:#ffffff;
 }
 </style>
 
@@ -48,28 +86,28 @@ h2 {
     <input type="text" name="result" class="display_bar" value="" placeholder="View Result Here" disabled />
 </div>
 
-<div class="number_container">
+<div class="number_container" id="row1">
     <input type="button" name="ac" id="numbers" value="AC" />
     <input type="button" name="percent" id="numbers" value="%" />
     <input type="button" name="divide" id="numbers" value="÷" />
     <input type="button" name="multiply" id="numbers" value="×" />
 </div>
 
-<div class="number_container">
+<div class="number_container" id="row2">
     <input type="button" name="num9" id="numbers" value="9" />
     <input type="button" name="num8" id="numbers" value="8" />
     <input type="button" name="num7" id="numbers" value="7" />
     <input type="button" name="sub" id="numbers" value="-" />
 </div>
 
-<div class="number_container">
+<div class="number_container" id="row3">
     <input type="button" name="num4" id="numbers" value="4" />
     <input type="button" name="num5" id="numbers" value="5" />
     <input type="button" name="num6" id="numbers" value="6" />
     <input type="button" name="add" id="numbers" value="+" />
 </div>
 
-<div class="number_container">
+<div class="number_container" id="row4">
     <input type="button" name="num1" id="numbers" value="1" />
     <input type="button" name="num2" id="numbers" value="2" />
     <input type="button" name="num3" id="numbers" value="3" />
@@ -77,7 +115,7 @@ h2 {
 
 </div>
 
-<div class="number_container">
+<div class="number_container" id="row5">
     <input type="button" name="num0" id="numbers" value="0" />
     <input type="button" name="num00" id="numbers" value="00" />
     <input type="button" name="point" id="numbers" value="." />
