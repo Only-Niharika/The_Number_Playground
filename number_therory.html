@@ -1,0 +1,127 @@
+<style>
+html{
+        font-family:Georgia;
+        background-image:url('');
+    }
+.res_display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 20px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin:15px;
+}
+
+.display_bar {
+    width: 450px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 30px;
+    color:#000000;
+    background-color:#c8c4e5;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    font-size:30px;
+}
+
+.number_container {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+#row1 input[type="button"]{
+    background-color:#ffdbdb;
+}
+
+#row1 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row2 input[type="button"]{
+    background-color:#ffcea5;
+}
+
+#row2 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row3 input[type="button"]{
+    background-color:#fff9d4;
+}
+
+#row3 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row4 input[type="button"]{
+    background-color:#d2fafd;
+}
+
+#row4 input[type="button"]:active{
+    background-color:#ffffff;
+}
+
+#row5 input{
+    background-color:#c9ffc7;
+}
+
+#row5 input:active{
+    background-color:#ffffff;
+}
+</style>
+
+<h2>Number Theory & Divisibility</h2>
+<div>
+<div class="res_display">
+    <textarea placeholder="View Result Here" class="display_bar" disabled></textarea>
+</div>
+
+<div class="number_container" id=row1>
+    <input type="button" name="ac" id="numbers" class="ac" value="AC" />
+    <input type="button" name="lcm" id="numbers" class="lcm" value="LCM" />
+    <input type="button" name="hcf" id="numbers" class="hcf" value="HCF" />
+    <input type="button" name="even" id="numbers" class="even" value="Even" />
+</div>
+
+<div class="number_container" id=row2>
+    <input type="button" name="num9" id="numbers" value="9" />
+    <input type="button" name="num8" id="numbers" value="8" />
+    <input type="button" name="num7" id="numbers" value="7" />
+    <input type="button" name="odd" id="numbers" class="odd" value="Odd" />
+</div>
+
+<div class="number_container" id=row3>
+    <input type="button" name="num4" id="numbers" value="4" />
+    <input type="button" name="num5" id="numbers" value="5" />
+    <input type="button" name="num6" id="numbers" value="6" />
+    <input type="button" name="fibbo" id="numbers" class="fibbo" value="Fibbo" />
+</div>
+
+<div class="number_container" id=row4>
+    <input type="button" name="num1" id="numbers" value="1" />
+    <input type="button" name="num2" id="numbers" value="2" />
+    <input type="button" name="num3" id="numbers" value="3" />
+    <input type="button" name="bckspace" id="numbers" value="⌫" />
+
+</div>
+
+<div class="number_container" id=row5>
+    <input type="button" name="num0" id="numbers" value="0" />
+    <input type="button" name="num00" id="numbers" value="00" />
+    <input type="button" name="point" id="numbers" value="." />
+    <input type="submit" name="equal" id="numbers" value="=" />
+</div>
+
+
+</div>
