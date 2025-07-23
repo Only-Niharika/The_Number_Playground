@@ -1,0 +1,54 @@
+<style>
+    html{
+        font-family:Georgia;
+        background-image:url('');
+    }
+    h2{
+        font-size:40px;
+        text-align: center;
+    }
+       
+    .row {
+            border-radius: 10px;
+            margin: 30px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+    .row input {
+            padding: 50px 30px;
+            width:300px;
+             border-radius: 10px;
+             font-size:16px;
+        }
+       
+    .row input:active{
+            background-color:#BCE7FD;
+           
+        }
+   
+    @media (max-width: 767px) {
+             .row {
+            flex-direction:column;
+           
+            }
+        }
+
+    </style>
+    <h2>Mensuration</h2>
+    <form method="" action="">
+    <div class="row">
+        <input type="submit" value="Parameter" name="parameter" class="parameter"/>
+        <input type="submit" value="Area" name="area" class="area"/>
+    </div>
+    <div class="row">
+        <input type="submit" value="Total Surface Area" name="tsa" class="tsa"/>
+        <input type="submit" value="Curved/Lateral Surface Area" name="csa" class="csa"/>
+    </div>
+    <div class="row">
+        <input type="submit" value="Volume" name="volume" class="volume"/>
+       
+    </div>
+    </form>
