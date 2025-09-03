@@ -78,6 +78,33 @@ h2 {
 #row5 input:active{
     background-color:#ffffff;
 }
+
+.go_back {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.go_back a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 100px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.go_back a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.go_back a:active {
+    transform: scale(0.95);
+    background-color: #f3a380;
+}
 </style>
 
 <h2>Arithmetic Operations</h2>
@@ -123,4 +150,8 @@ h2 {
 </div>
 
 
+</div>
+
+<div class="go_back">
+    <a href="/"> <b>←</b> Go Back</a>
 </div>
