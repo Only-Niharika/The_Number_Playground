@@ -19,17 +19,28 @@
             gap: 30px;
         }
 
-        .row input {
-            padding: 50px 30px;
-            width:300px;
-             border-radius: 10px;
-             font-size:16px;
-        }
+        .row a {
+        padding: 50px 30px;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        transition: all 0.3s ease;
+    }
+
+    .row a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .row a:active {
+        transform: scale(0.95);
+        background-color: #FFA7A6;
+    }
        
-        .row input:active{
-            background-color:#FFA7A6;
-           
-        }
         @media (max-width: 767px) {
              .row {
             flex-direction:column;
@@ -43,12 +54,12 @@
     <h1>Let's Play With Numbers</h1>
     <form method="get" action="">
     <div class="row">
-        <input type="submit" value="Arithmetic operations" name="arithmetic" class="arithmetic"/>
-        <input type="submit" value="Powers & Roots" name="power" class="power_root"/>
+        <a href="/arithmetic_operations">Arithmetic operations</a>
+        <a href="/powers_roots">Powers & Roots</a>
     </div>
     <div class="row">
-        <input type="submit" value="Number Theory & Divisibility" name="number" class="number_theory"/>
-        <input type="submit" value="Mensuration" name="mensuration" class="mensuration"/>
+        <a href="/number_theory">Number Theory & Divisibility</a>
+        <a href="/mensuration">Mensuration</a>
     </div>
     </form>
 </body>
