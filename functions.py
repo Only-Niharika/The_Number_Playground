@@ -10,19 +10,19 @@ def home():
     except Exception as e:
         return f"Error: {str(e)}<br>Current directory: {os.getcwd()}"
 
-@app.route('/arithmetic_operations')  # Added trailing slash
+@app.route('/arithmetic_operations')
 def arithmetic_operations():
     return render_template('arithmetic_operations.html')
 
-@app.route('/powers_roots')  # Added trailing slash and fixed template name
+@app.route('/powers_roots')
 def power_roots():
-    return render_template('powers_roots.html')  # Changed from powers_roots.html
+    return render_template('powers_roots.html')
 
-@app.route('/number_theory')  # Added trailing slash
+@app.route('/number_theory')
 def number_theory():
     return render_template('number_theory.html')
 
-@app.route('/mensuration')  # Remove trailing slash for consistency
+@app.route('/mensuration')
 def mensuration():
     return render_template('mensuration.html')
 
